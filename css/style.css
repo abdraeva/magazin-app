@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  background-color: blueviolet;
+  width: 100%;
+  color: white;
+}
+.container{
+  width: 1224px;
+  margin: auto;
+
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar button{
+  padding: 10px 24px;
+  background: black;
+  cursor: pointer;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+}
+
+main{
+  background: url(https://images.pexels.com/photos/589840/pexels-photo-589840.jpeg?cs=srgb&dl=pexels-valiphotos-589840.jpg&fm=jpg)center / cover;
+  width: 100%;
+  height: 150vh;
+  background-attachment: fixed;
+}
+
+.filters{
+  display: flex;
+  gap: 40px;
+  padding-top: 80px;
+
+}
+
+.filters select{
+  height: 50px;
+  width: 350px;
+  border: 0;
+  box-shadow: 0 0 8px rgb(94, 54, 54);
+  border-radius: 10px;
+}
+
+.filters input{
+  width: 70%;
+  padding: 0 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgb(75, 44, 44);
+}
+
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  row-gap: 40px;
+}
+
+.card{
+  width: 31%;
+  height: auto;
+  border-radius: 10px;
+  background-color: rgb(112, 124, 148);
+  padding: 10px;
+  box-shadow: 0 0 10px rgb(172, 100, 100);
+}
+
+.card h2{
+  text-align: center;
+}
+
+.card img{
+  width: 100%;
+  height: 200px;
+  border-radius: 10px rgb(23, 65, 52);
+  object-fit: cover;
+}
+aside{
+  width: 25%;
+  background-color: white;
+  text-align: center;
+  height: 100vh;
+  position: fixed;
+  transition: .5s;
+  left: -25%;
+  z-index: 3;
+  box-shadow: 0 0 5 px gray;
+
+}
+aside .bars div {
+  width: 30px;
+  height: 3px;
+  margin: 4px 0;
+  background-color: rgb(198, 230, 19);
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow:  0 0 5px rgb(173, 197, 36);
+}
+
+aside .bars {
+  cursor: pointer;
+  position: absolute;
+  right: -15%;
+  top: 3%;
+  transition: .5s;
+}
+aside form {
+  padding:  0 20px;
+  text-align: center;
+}
+
+aside form input{
+  width: 90%;
+  padding: 10px 3px ;
+  margin-bottom: 10px;
+}
+.error{
+  color: red;
+}
+aside form button{
+  width: 90%;
+  padding: 10px ;
+  margin-bottom: 10px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: rgb(198, 230, 19);
+  color: white;
+}
+.sideBar.active{
+  left: 0;
+}
+.bars.activeBars{
+  right: 8% !important;
+
+}
